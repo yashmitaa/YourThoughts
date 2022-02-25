@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Quote</title>
+
+    <style>
+      body {
+        background-color: #d8c2ff;
+      }
+      section {
+        border: 4px solid #d8c2ff;
+        padding: 16px;
+        margin: 40px auto;
+        width: 500px;
+        background-color: #6247aa;
+        color: white;
+        word-wrap: break-word;
+      }
+      button {
+        width: 80px;
+        height: 30px;
+        background-color: #9163cb;
+        color: white;
+        border: none;
+      }
+      button:hover {
+        background-color: #6247aa;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/quotes"><button>All Quotes</button></a>
+    <section>
+      <h3><%= quote.description %></h3>
+      <p><i><%= quote.name %></i></p>
+    </section>
+  </body>
+</html>

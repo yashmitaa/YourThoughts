@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Quote</title>
+    <style>
+      body {
+        background-color: #f3c4fb;
+      }
+      h1 {
+        text-align: center;
+        background-color: #6d23b6;
+        height: 50px;
+        color: white;
+      }
+      div {
+        margin: auto;
+        width: 500px;
+        justify-content: center;
+
+        /* border: 2px solid black; */
+      }
+      input[type="text"] {
+        border-radius: 10px;
+        width: 200px;
+        height: 25px;
+      }
+      textarea {
+        border-radius: 10px;
+        width: 200px;
+        border: 1.5px solid black;
+        height: 100px;
+      }
+      button {
+        background-color: #6d23b6;
+        color: white;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add Quote</h1>
+    <div>
+      <form action="/quotes" method="POST">
+        <label for="name"><h2>Quote By :</h2></label>
+        <input type="text" name="name" id="name" placeholder="Name" />
+        <br />
+        <label for="description"><h2>Quote :</h2></label>
+        <textarea
+          name="description"
+          id="description"
+          cols="30"
+          rows="3"
+        ></textarea
+        ><br />
+        <button type="submit">Add Quote</button>
+      </form>
+    </div>
+  </body>
+</html>
